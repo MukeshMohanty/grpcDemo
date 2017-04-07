@@ -1,2 +1,4 @@
 Contains pub sub
 https://github.com/jjschlesinger/GrpcDemo
+
+protoc -I ../pb --csharp_out ../Grpc.Messages ../pb/messages.proto --grpc_out ../Grpc.Messages --plugin=protoc-gen-grpc=grpc_csharp_plugin.exe
